@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Core | RSVP & Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Consistent Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Party Core</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu & Schedule</a></li>
+        <li><a href="rsvp.html" class="active">RSVP & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="page-header">
+      <h1>RSVP & Contact</h1>
+      <p>Let us know if you can make it, or reach out for more information.</p>
+    </section>
+
+    <div class="two-column">
+      <!-- RSVP Form -->
+      <section class="content-card">
+        <h2>Confirm Your Attendance</h2>
+        <form id="rsvpForm" onsubmit="submitRSVP(event)">
+          <label for="guestName">Your Full Name:</label>
+          <input type="text" id="guestName" placeholder="Enter your name" required>
+
+          <label for="guestCount">Number of Guests:</label>
+          <input type="number" id="guestCount" min="1" max="10" value="1" required>
+
+          <label for="attending">Will you attend?</label>
+          <select id="attending">
+            <option value="Yes, I will be there!">Yes, I will be there!</option>
+            <option value="Sorry, I cannot make it.">Sorry, I cannot make it.</option>
+          </select>
+
+          <button type="submit" class="btn-primary">Send RSVP</button>
+        </form>
+      </section>
+
+      <!-- Contact Info -->
+      <section class="content-card pastel-blue">
+        <h2>For More Information</h2>
+        <p>Have questions about gifts, parking, or food allergies? Contact the host:</p>
+        <ul class="contact-list">
+          <li><strong>Host:</strong> Party Core Team</li>
+          <li><strong>Phone:</strong> (555) 123-4567</li>
+          <li><strong>Email:</strong> hello@partycore.example.com</li>
+          <li><strong>Location:</strong> 123 Pastel Garden Lane</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Consistent Footer -->
+  <footer>
+    <p>&copy; 2026 Party Core | For more information, visit our <a href="rsvp.html">Contact Page</a>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

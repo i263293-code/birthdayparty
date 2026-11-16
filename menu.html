@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Core | Menu & Schedule</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Consistent Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Party Core</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu & Schedule</a></li>
+        <li><a href="rsvp.html">RSVP & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="page-header">
+      <h1>Party Menu & Schedule</h1>
+      <p>Check out what we are serving and what we have planned for the night.</p>
+    </section>
+
+    <!-- Styled Menu Table from Lab 11 -->
+    <section class="content-card">
+      <h2>Dinner & Dessert Menu</h2>
+      <div class="table-responsive">
+        <table>
+          <thead>
+            <tr>
+              <th>Appetizers</th>
+              <th>Main Course</th>
+              <th>Desserts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mango Salad</td>
+              <td>Chicken Curry</td>
+              <td>Chocolate Pudding</td>
+            </tr>
+            <tr>
+              <td>Shrimp</td>
+              <td>Biryani</td>
+              <td>Rasmalai</td>
+            </tr>
+            <tr>
+              <td>Rolls</td>
+              <td>Chicken Tikka</td>
+              <td>Birthday Cake</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="center-btn">
+        <button class="btn-primary" onclick="dietaryNote()">Check Dietary Info</button>
+      </div>
+    </section>
+
+    <!-- Evening Schedule -->
+    <section class="highlights">
+      <div class="card pastel-lavender">
+        <h3>6:30 PM</h3>
+        <p>Guest Arrival & Appetizers</p>
+      </div>
+      <div class="card pastel-peach">
+        <h3>7:30 PM</h3>
+        <p>Party Games & Music</p>
+      </div>
+      <div class="card pastel-mint">
+        <h3>8:30 PM</h3>
+        <p>Main Dinner & Cake Cutting</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Consistent Footer -->
+  <footer>
+    <p>&copy; 2026 Party Core | For more information, visit our <a href="rsvp.html">Contact Page</a>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
