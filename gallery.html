@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Core | Party Gallery</title>
+  <!-- Google Fonts: Playfair Display & Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Responsive Gallery Grid reusing existing pastel theme */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      border-radius: 16px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(109, 89, 122, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-4px);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 4px solid #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .gallery-item figcaption {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #3d344b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Consistent Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Party Core</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu & Schedule</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="rsvp.html">RSVP & Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="page-header">
+      <h1>Pastel Party Gallery</h1>
+      <p>A sneak peek at our decorations, sweet treats, and birthday celebration vibes.</p>
+    </section>
+
+    <section class="content-card">
+      <div class="gallery-grid">
+        <!-- Image 1: Your existing uploaded party photo -->
+        <figure class="gallery-item pastel-pink">
+          <img src="images.jpg" alt="Pastel balloon arch and sprinkled birthday cake">
+          <figcaption>Pastel Balloon Arch & Birthday Cake Table</figcaption>
+        </figure>
+
+        <!-- Image 2 -->
+        <figure class="gallery-item pastel-mint">
+          <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?auto=format&fit=crop&w=600&q=80" alt="Frosted pastel birthday cupcakes">
+          <figcaption>Swirled Pastel Buttercream Cupcakes</figcaption>
+        </figure>
+
+        <!-- Image 3 -->
+        <figure class="gallery-item pastel-blue">
+          <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=80" alt="Colorful party balloons floating">
+          <figcaption>Soft Pastel Celebration Balloons</figcaption>
+        </figure>
+
+        <!-- Image 4 -->
+        <figure class="gallery-item pastel-lavender">
+          <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=600&q=80" alt="Festive confetti and party decorations">
+          <figcaption>Festive Confetti & Table Decor</figcaption>
+        </figure>
+
+        <!-- Image 5 -->
+        <figure class="gallery-item pastel-peach">
+          <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80" alt="Wrapped birthday gift boxes with ribbons">
+          <figcaption>Pastel Wrapped Birthday Gifts</figcaption>
+        </figure>
+
+        <!-- Image 6 -->
+        <figure class="gallery-item pastel-pink">
+          <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=600&q=80" alt="Lit birthday candles on cake">
+          <figcaption>Make a Wish Candle Moment</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- Consistent Footer -->
+  <footer>
+    <p>&copy; 2026 Party Core | For more information, visit our <a href="rsvp.html">Contact Page</a>.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
