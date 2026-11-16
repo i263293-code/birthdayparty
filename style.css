@@ -290,3 +290,31 @@ footer a {
     font-size: 1.7rem;
   }
 }
+button {
+    background-color: #E6B85C;
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #D49B38;
+    transform: scale(1.05);
+}
+/* Manual: Improve birthday heading design */
+
+h1 {
+    color: #8B4A75;
+    font-size: 42px;
+    text-shadow: 2px 3px 5px #E8B6D0;
+    letter-spacing: 2px;
+}
+
+h1:hover {
+    color: #D46A9A;
+    transition: 0.3s;
+}
